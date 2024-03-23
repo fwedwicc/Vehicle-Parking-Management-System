@@ -39,6 +39,7 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Password = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -77,7 +78,7 @@ Partial Class Form1
         '
         Me.ProgressBar.BackColor = System.Drawing.Color.White
         Me.ProgressBar.FillColor = System.Drawing.Color.Transparent
-        Me.ProgressBar.Location = New System.Drawing.Point(-11, 1)
+        Me.ProgressBar.Location = New System.Drawing.Point(-11, -3)
         Me.ProgressBar.Name = "ProgressBar"
         Me.ProgressBar.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ProgressBar.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(209, Byte), Integer), CType(CType(142, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -130,6 +131,7 @@ Partial Class Form1
         Me.Panel1.BackColor = System.Drawing.Color.Transparent
         Me.Panel1.BackgroundImage = CType(resources.GetObject("Panel1.BackgroundImage"), System.Drawing.Image)
         Me.Panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom
+        Me.Panel1.Controls.Add(Me.Label3)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Controls.Add(Me.Guna2HtmlLabel3)
@@ -143,7 +145,7 @@ Partial Class Form1
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Arial", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(93, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(41, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(49, 124)
+        Me.Label2.Location = New System.Drawing.Point(49, 119)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(207, 24)
         Me.Label2.TabIndex = 4
@@ -241,11 +243,22 @@ Partial Class Form1
         Me.Label7.TabIndex = 13
         Me.Label7.Text = "Show Password"
         '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Font = New System.Drawing.Font("Segoe UI Semibold", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(93, Byte), Integer), CType(CType(62, Byte), Integer), CType(CType(41, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(50, 178)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(79, 60)
+        Me.Label3.TabIndex = 14
+        Me.Label3.Text = "Navigate. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Park. " & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10) & "Manage."
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(235, Byte), Integer), CType(CType(235, Byte), Integer), CType(CType(235, Byte), Integer))
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(248, Byte), Integer), CType(CType(228, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1131, 677)
         Me.ControlBox = False
         Me.Controls.Add(Me.Label7)
@@ -284,4 +297,5 @@ Partial Class Form1
     Friend WithEvents Label4 As Label
     Friend WithEvents Password As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label7 As Label
+    Friend WithEvents Label3 As Label
 End Class

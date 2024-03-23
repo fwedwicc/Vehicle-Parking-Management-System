@@ -10,7 +10,7 @@
             Timer1.Enabled = False
             Hide()
             MsgBox("Success! Welcome to Vehicle Parking Management System!")
-            ' Form2.Show()
+            Form2.Show()
         End If
     End Sub
 
